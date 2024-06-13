@@ -1,4 +1,4 @@
-package org.example.ddm;
+package org.example.ddm.repository;
 
 import org.example.ddm.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
