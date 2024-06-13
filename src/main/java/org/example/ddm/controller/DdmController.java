@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class DdmController {
@@ -26,8 +27,10 @@ public class DdmController {
     private JwtService jwtService;
 
     @GetMapping("/index")
-    public String index() {
-        return "Hlavní stránka DDM Orlová";
+    public ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        return modelAndView;
     }
 
     @PostMapping("/addNewEmployee")
