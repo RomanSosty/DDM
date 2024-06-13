@@ -1,0 +1,123 @@
+:root {
+    --main-bg-color: #F7F7F7;
+    --nav-bg-color: #FFFFFF;
+    --main-text-color: #000000;
+    --second-bg-color: #EAEAEA;
+}
+
+.mclaren-regular {
+    font-family: "McLaren", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.paytone-one-regular {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: var(--main-bg-color);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: var(--nav-bg-color);
+    display: grid;
+    grid-template-columns: 150px 2.5fr 0.3fr;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 125px;
+}
+
+.logo-DDM {
+    height: 40%;
+    margin: 1em 0 0 1em;
+}
+
+.nav-ul {
+    list-style: none;
+    margin: 2em 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-li-a {
+    display: block;
+    color: var(--main-text-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.nav-li-a:hover {
+    text-decoration: underline;
+}
+
+.nav-ul-submenu {
+    list-style: none;
+    background-color: var(--nav-bg-color);
+    align-content: center;
+    padding: 0.5em 1em;
+    /*TODO: na hover se zobrazí*/
+    display: none;
+}
+
+.submenu:hover {
+    display: block;
+}
+
+.nav-ul-submenu-li {
+    margin: 0.4em 0;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 440px auto auto auto auto;
+}
+
+.hero-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-img {
+    opacity: 0.85;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 3em;
+}
+
+.main-activities {
+    background-color: var(--second-bg-color);
+}
+
+.main-activities-text {
+    margin: 3em;
+}
+
+.main-info {
+    margin: 3em;
+    text-align: center;
+}
+
+.main-sponsors {
+    margin: 3em;
+}
+
