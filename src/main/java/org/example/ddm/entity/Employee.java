@@ -23,6 +23,7 @@ public class Employee {
     private String phone;
     private String password;
     private String username;
+    private String roles;
 
     public Long getId() {
         return id;
@@ -78,5 +79,13 @@ public class Employee {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
     }
 }
