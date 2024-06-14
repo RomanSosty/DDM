@@ -85,7 +85,7 @@ main {
 
 .hero-section {
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
 }
 
 .hero-img {
