@@ -33,12 +33,19 @@ public class DdmController {
         return modelAndView;
     }
 
+    @GetMapping("/login")
+    public ModelAndView login() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login");
+        return modelAndView;
+    }
+
     @PostMapping("/addNewEmployee")
     public String addNewEmployee(@RequestBody Employee employee) {
         return employeeService.addEmployee(employee);
     }
 
-    @PostMapping("/login")
+    @PostMapping("/authAndGenerateToken")
     public String authAndGenerateToken(@RequestBody AuthRequest authRequest) {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
         if (authentication.isAuthenticated()) {
